@@ -3,5 +3,99 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
- *= require_tree . 
 */
+
+@import "colors";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: Arial;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background: image-url('chem-bg.jpg') center 85px repeat-x;
+  color: #333;
+  font-family: alwyn-new;
+}
+
+ol, ul {
+  list-style: none;
+
+  li { display: inline }
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 2.7em;
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 5px 0;
+}
+
+h3 {
+  color: $blue;
+  font-family: alwyn-new;
+  font-size: 1em;
+}
+
+h4 {
+  color: $blue;
+  font-family: alwyn-new;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 200;
+  line-height: 1.4em;
+}
+
+.clear { clear: both; }
+.last  { margin-right: 0; }
+
+.tk-alwyn-new {
+  &.thin { font-weight: 100; }
+  &.bold { font-weight: 700; }
+}
+
+@import 'header';
+@import 'footer';
+

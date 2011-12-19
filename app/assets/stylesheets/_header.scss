@@ -1,0 +1,26 @@
+div.header-container {
+  background: #3A3A4C;
+  height: 80px;
+  width: 100%;
+
+  header {
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+
+    img.logo {
+      float: left;
+      margin-top: 10px;
+      z-index: 2;
+    }
+  }
+}
+
+div.header-under {
+  background: #1A1A2C;
+  border-top: 1px solid #7595A3;
+  height: 4px;
+  width: 100%;
+}
+
